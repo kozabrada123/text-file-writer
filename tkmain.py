@@ -7,6 +7,9 @@ class gui:
         self.label = Label(master, text="")
         self.label.pack()
 
+        self.entry = Entry(master, textvariable=ent, width=50)
+        self.entry.pack()
+        
         self.plus_button = Button(master, text="Add text", command=self.plus)
         self.plus_button.pack()
 
@@ -16,8 +19,6 @@ class gui:
         self.close_button = Button(master, text="Close", command=self.closegay)
         self.close_button.pack()
 
-        self.entry = Entry(master, textvariable=ent, width=50)
-        self.entry.pack()
 
         self.donotkillcomputer_button = Button(master, text="Clear", command=self.clear)
         self.donotkillcomputer_button.pack()
